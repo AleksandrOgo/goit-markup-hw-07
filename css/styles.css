@@ -117,11 +117,14 @@ ul {
     font-size: 36;
     line-height: 1;
     color: var(--color-dark);
-    padding: 80px 40px 35px 40px;
     flex-direction: column;
-    align-items: flex-start;
-    flex: none;
-    flex-grow: 0;
+
+}
+.contact-menu-nav-mob {
+display: flex;
+flex-direction: column;
+gap: 40px;
+
 }
 
 .mobile-menu {
@@ -133,6 +136,7 @@ width: 100%;
 height: 100%;
 background: #FFFFFF;
 transform: translateX(100%);
+padding: 80px 0 40px 40px;
 }
 @media screen and (min-width: 768px) {
     .mobile-menu {
@@ -140,7 +144,7 @@ transform: translateX(100%);
     }
 }
 
-.mobile-menu.js-open {
+.mobile-menu.is-open {
     transform: translateX(0);
 }
 .modal-close-js {
@@ -158,6 +162,15 @@ transform: translateX(100%);
     height: 24px;
     cursor: pointer;
 }
+.modal-close-js:hover {
+    color: var(--color-light);
+    background-color: var(--color-blue-light);
+}
+.modal-close-js:focus {
+    color: var(--color-light);
+    background-color: var(--color-blue-light);
+}
+
 .mobile-nav-two {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -165,7 +178,6 @@ transform: translateX(100%);
     line-height: 1;
     padding: 0;
     gap: 40px;
-    margin: auto;
     color: var(--color-dark);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -183,6 +195,12 @@ transform: translateX(100%);
     width: 24px;
     height: 24px;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+.js-close-menu.is-open {
+    transform: translateX(0);
 }
 .icon-modal {
     width: 328px;
@@ -240,6 +258,7 @@ transition-property: color;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 position: relative;
 }
+
 .link-nav.current::after {
     display: block;
     content: '';
@@ -258,6 +277,19 @@ color: var(--color-blue);
 .link-nav:hover {
 color: var(--color-blue-light);
 }
+
+.link-nav-mobile {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42;
+    text-decoration: none;
+
+}
 .link-address {
 font-weight: 400;
 color: var(--color-gray);
@@ -266,6 +298,16 @@ text-decoration: none;
 transition: color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-address-mob {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02;
+    color: var(--color-gray);
+    padding: 24px 0px;
+    text-transform: capitalize;
+    text-decoration: none;
 }
 .navigation {
 font-size: var(--font-size-16);
@@ -300,12 +342,30 @@ gap: 40px;
 
 
 .list-about {
-display: flex;
-text-align: left;
-gap: 24px;
-flex-basis: calc((100%-(3*24px))/4);
-
+        display: block;
+            text-align: center;
+            align-items: center;
+margin-left: 16px;
+margin-right: 16px;
+        flex-basis: calc((100%-(3*24px))/1);
 }
+
+@media screen and (min-width: 768px) {
+.list-about {
+        display: flex;
+        text-align: left;
+        gap: 24px;
+        flex-basis: calc((100%-(1*24px))/2);
+    }
+    }
+        @media screen and (min-width: 1200px) {
+            .list-about {
+                display: flex;
+                text-align: left;
+                gap: 24px;
+                flex-basis: calc((100%-(3*24px))/4);
+            }
+        }
 
 .address {
     font-size: var(--font-size-12);
@@ -317,7 +377,7 @@ flex-basis: calc((100%-(3*24px))/4);
 }
 @media screen and (min-width: 1200px) {
 .address {
-        font-size: var(--font-size-16));
+        font-size: var(--font-size-16);
         line-height: 1.5;
     }
 }
@@ -685,11 +745,13 @@ border: 1px solid var(--color-light);
 border-top: none;
 padding: 32px 16px;
 }
+
 .columns {
 width: calc((100%-24px*3)/4);
 }
+
 .columns-about {
-    flex-basis: calc((100%-(3*24px))/4);
+flex-basis: calc((100%-(3*24px))/4);
     background: var(--color-light);
     gap: 24px;
     width: 264px;
@@ -697,13 +759,30 @@ width: calc((100%-24px*3)/4);
     text-align: center;
     padding-top: 24px;
 }
+
 .icons-main {
-display: flex;
-border-radius: 4px;
-gap: 24px;
-align-items: center;
-margin-bottom: 8px;
+display: none;
 }
+
+@media screen and (min-width: 768px) {
+.icons-main {
+        display: block;
+        border-radius: 4px;
+        gap: 24px;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .icons-main {
+        display: block;
+        border-radius: 4px;
+        gap: 24px;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+}
+
 
 .socials-item {
 width: 40px;
