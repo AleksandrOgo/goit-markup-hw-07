@@ -38,7 +38,7 @@
 </ul>
 </address>
     <div class="mobile-menu js-menu-container">
-        <button class="modal-close-js js-close-menu" type="button" data-modal-close>
+        <button class="modal-close-js js-close-menu" type="button">
             <svg class="close">
                 <use href="./images/icons.svg#icon-close">
                     </use>
@@ -159,7 +159,9 @@
         <h2 class="team-title">Our Team</h2>
         <ul class="team">
             <li class="card-color">
-                <img src="./images/Mark_Guerrero.jpg" alt="Mark Guerrero" width="264">
+                <img srcset="./images/Mark_Guerrero.jpg 1x, ./images/Mark_Guerrero@2x.jpg 2x"
+                src=".images/Mark_Guerrero.jpg"
+                alt="Mark Guerrero"/>
                 <div class="card-bottom">
                     <h3 class="section-name">Mark Guerrero</h3>
                     <p class="section-text">Product Designer</p>
@@ -200,7 +202,9 @@
                 </div>
             </li>
             <li class="card-color">
-                <img src="./images/Tom_Ford.jpg" alt="Tom Ford" width="264">
+                <img srcset="./images/Tom_Ford.jpg 1x, ./images/Tom_Ford@2x.jpg 2x"
+                src="./images/Tom_Ford.jpg"
+                alt="Tom Ford"/>
                 <div class="card-bottom">
                     <h3 class="section-name">Tom Ford</h3>
                     <p class="section-text">Frontend Developer</p>
@@ -241,7 +245,9 @@
                 </div>
             </li>
             <li class="card-color">
-                <img src="./images/Camila_Garcia.jpg" alt="Camila Garcia" width="264">
+                <img srcset="./images/Camila_Garcia.jpg 1x, ./images/Camila_Garcia@2x.jpg 2x"
+                src="./images/Camila_Garcia.jpg"
+                 alt="Camila Garcia"/>
                 <div class="card-bottom">
                     <h3 class="section-name">Camila Garcia</h3>
                     <p class="section-text">Marketing</p>
@@ -282,7 +288,8 @@
                 </div>
             </li>
             <li class="card-color">
-                <img src="./images/Daniel_Wilson.jpg" alt="Daniel Wilson" width="264">
+                <img srcset="./images/Daniel_Wilson.jpg 1x, ./images/Daniel_Wilson@2x.jpg 2x"
+                src="./images/Daniel_Wilson.jpg" alt="Daniel Wilson"/>
                 <div class="card-bottom">
                     <h3 class="section-name">Daniel Wilson</h3>
                     <p class="section-text">UI Designer</p>
@@ -383,6 +390,7 @@
 </main>
 <footer class="footer">
     <div class="container footer-socials">
+        <div class="footer-block">
 <div>
         <a href="./index.html" class="logo">WEB<span class="logo-footer">STUDIO</span></a>
         <p class="footer-text">
@@ -427,6 +435,7 @@
             </a>
         </li>
     </ul>
+</div>
 </div>
 <div class="footer-form">
     <h3 class="footer-form-text">Subscribe</h3>
