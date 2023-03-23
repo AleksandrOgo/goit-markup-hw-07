@@ -217,7 +217,18 @@ ul {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
+.js-close-menu:hover {
+        background-color: var(--color-blue-light);
+        fill: var(--color-white);
+        border-radius: 4%;
+        border-radius: 50%;
+}
+.js-close-menu:focus {
+    background-color: var(--color-blue-light);
+    fill: var(--color-white);
+    border-radius: 4%;
+    border-radius: 50%;
+}
 
 .js-close-menu.is-open {
     transform: translateX(0);
@@ -761,6 +772,7 @@ color: var(--color-dark);
 }
 
 .footer {
+    display: flex;
     background-color: var(--color-dark);
     text-align: left;
     padding-top: 120px;
@@ -939,6 +951,12 @@ img {
     padding: 120px 0;
 }
 
+@media screen and (min-width: 767px) {
+    .our-team {
+        flex-wrap: wrap;
+    }
+}
+
 .portfolio-apps {
     display: flex;
     align-items: center;
@@ -969,9 +987,31 @@ img {
     padding: 32px 16px;
 }
 
+
 .columns {
+    text-align: left;
+    flex-direction: column;
+    flex-basis: calc((100% - 3 * 24px) / 4);
+}
+
+
+@media screen and (min-width: 767px) {
+    .columns {
+        flex-basis: calc((100% - 24px) / 2);
+    }
 
 }
+
+@media screen and (min-width: 1200px) {
+    .columns {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        flex-basis: calc((100% - 24px) / 2);
+        flex-wrap: nowrap;
+    }
+}
+
 
 
 .columns-about {
@@ -1160,15 +1200,11 @@ img {
     align-items: left;
     align-content: left;
     display: block;
-    margin-top: 8px;
-    margin-left: 128px;
     display: flex;
     gap: 16px;
 }
 @media screen and (min-width: 1200px) {
 .footer-social-list {
-        margin-top: 8px;
-        margin-left: 128px;
         display: flex;
         gap: 16px;
     }
@@ -1189,7 +1225,7 @@ img {
     .footer-socials {
     display: flex;
     align-content: left;
-    padding-left: 108%;
+    padding-left: 108px;
     }
 }
 @media screen and (min-width: 1200px) {
