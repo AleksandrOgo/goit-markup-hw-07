@@ -51,7 +51,7 @@
             </button>
 
             <div class="mobile-menu js-menu-container">
-                <button class="model-close-js js-close-menu" type="button" data-modal-close>
+                <button class="model-close-js js-close-menu" type="button">
                     <svg class="close">
                         <use href="./images/icons.svg#icon-close-black"></use>
                     </svg>
@@ -102,33 +102,6 @@
                     </ul>
                 </div>
             </div>
-            <!--<div class="mobile-menu mobile-menu.js">
-                    <button class="model-close-js js-close-menu" type="button" data-modal-close>
-                        <svg class="close">
-                            <use href="./images/icons.svg#icon-close-black"></use>
-                        </svg>
-                    </button>
-                    <nav class="header-nav">
-                        <a href="./index.html" class="navig-logo"><span class="navig-logoitem">Web</span>Studio</a>
-                        <ul style="list-style: none" class="header-menu contact-menu">
-                            <li><a class="link current" href="./index.html">Studio</a></li>
-                            <li><a class="link" href="./portfolio.html">Portfolio</a></li>
-                            <li><a class="link" href="">Contacts</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="header-contact">
-                    <address class="color-two">
-                        <ul style="list-style: none" class="header-menu">
-                            <li>
-                                <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                            </li>
-                            <li>
-                                <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
-                            </li>
-                        </ul>
-                    </address>
-                </div>-->
         </div>
     </header>
     <main>
@@ -136,7 +109,7 @@
             <div class="container">
                 <h1 class="hero-name">Effective Solutions
                     for Your Business</h1>
-                <button class="button-one" type="button" data-modal-open>Send</button>
+                <button class="button-one" type="button" data-modal-open>Order Service</button>
             </div>
         </section>
         <section class="section-one">
@@ -147,7 +120,7 @@
                         <img src="./images/antenna1.svg" alt="clock" width="64">
                     </li>
                     <li class="pages-icons">
-                        <img src="./images/clock1.svg" alt="clock" width="61.22">
+                        <img src="./images/clock1.svg" alt="clock" width="64">
                     </li>
                     <li class="pages-icons">
                         <img src="./images/diagram1.svg" alt="clock" width="64">
@@ -198,12 +171,11 @@
             </div>
         </section>
         <section class="last-section">
-            <div class="container">
+            <div class="container container-last">
                 <h2 class="section-twice-team">Our Team</h2>
                 <ul style="list-style: none" class="pages-last">
                     <li class="team">
-                        <img srcset="./images/team1.jpg 264w, ./images/team1@2x.jpg 264w"
-                            sizes=" (min-width: 768px) 264px, (min-width: 1200px) 264px" src="./images/team1.jpg"
+                        <img srcset="./images/team1.jpg , ./images/team1@2x.jpg 2x" src="./images/team1.jpg"
                             alt="product designer" width="264" height="260">
                         <div class="name-card">
                             <h3 class="color-one">Mark Guerrero</h3>
@@ -241,8 +213,7 @@
                         </div>
                     </li>
                     <li class="team">
-                        <img srcset="./images/team2.jpg 264w, ./images/team2@2x.jpg 264w"
-                            sizes=" (min-width: 768px) 264px, (min-width: 1200px) 264px" src="./images/team2.jpg"
+                        <img srcset="./images/team2.jpg, ./images/team2@2x.jpg 2x" src="./images/team2.jpg"
                             alt="frontend Developer" width="264" height="260">
                         <div class="name-card">
                             <h3 class="color-one">Tom Ford</h3>
@@ -280,8 +251,7 @@
                         </div>
                     </li>
                     <li class="team">
-                        <img srcset="./images/team3.jpg 264w, ./images/team3@2x.jpg 264w"
-                            sizes=" (min-width: 768px) 264px, (min-width: 1200px) 264px" src="./images/team3.jpg"
+                        <img srcset="./images/team3.jpg, ./images/team3@2x.jpg 2x" src="./images/team3.jpg"
                             alt="marketing" width="264" height="260">
                         <div class="name-card">
                             <h3 class="color-one">Camila Garcia</h3>
@@ -319,8 +289,7 @@
                         </div>
                     </li>
                     <li class="team">
-                        <img srcset="./images/team4.jpg 264w, ./images/team4@2x.jpg 264w"
-                            sizes=" (min-width: 768px) 264px, (min-width: 1200px) 264px" src="./images/team4.jpg"
+                        <img srcset="./images/team4.jpg, ./images/team4@2x.jpg 2x" src="./images/team4.jpg"
                             alt="uI designer" width="264" height="260">
                         <div class="name-card">
                             <h3 class="color-one">Daniel Wilson</h3>
@@ -361,7 +330,7 @@
             </div>
         </section>
         <section class="customers">
-            <div class="container">
+            <div class="container container-last">
                 <h2 class="section-twice-team">Customers</h2>
                 <ul class="icons-customers">
                     <li class="section-customers">
@@ -522,9 +491,9 @@
             </form>
         </div>
     </div>
-
-    <script src="./modal.js/mobile-menu.js"></script>
     <script src="./modal.js/modal.js"></script>
+    <script src="./modal.js/mobile-menu.js"></script>
+
 </body>
 
 </html>
