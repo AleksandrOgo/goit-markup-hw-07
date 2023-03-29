@@ -118,28 +118,34 @@
                             </p>
                         </li>
                         <li class="columns">
+                            <div class="svg-icons">
                             <svg class="icons" width="64" height="64">
                                 <use href="./images/icons.svg#icon-clock">
                                 </use>
                             </svg>
+                            </div>
                             <h3 class="section-name">Punctuality</h3>
                             <p class="section-text">
                                 Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
                         </li>
                         <li class="columns">
+                            <div class="svg-icons">
                         <svg class="icons" width="64" height="64">
                             <use href="./images/icons.svg#icon-diagram">
                             </use>
                         </svg>
+                        </div>
                             <h3 class="section-name">Diligence</h3>
                             <p class="section-text">
                                 Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
                         </li>
                         <li class="columns">
+                            <div class="svg-icons">
                         <svg class="icons" width="64" height="64">
                             <use href="./images/icons.svg#icon-cosmonaut">
                             </use>
                         </svg>
+                        </div>
                             <h3 class="section-name">Technologies</h3>
                             <p class="section-text">
                                 Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
@@ -151,9 +157,26 @@
     <div class="container">
     <h2 class="section-title">What are we doing</h2>
     <ul class="services">
-        <li><img src="./images/seo.jpg" alt="seo" width="360"></li>
-        <li><img src="./images/multifunctual.jpg" alt="multifunctual" width="360"></li>
-        <li><img src="./images/foralldevices.jpg" alt="foralldevices" width="360"></li>
+        <li>
+            <img
+            srcset="./images/seo.jpg 1x, ./images/seo@2x.jpg 2x"
+            src="./images/seo.jpg"
+            width="360"
+            height="300"
+            alt="seo"/>
+        </li>
+        <li>
+        <img srcset="./images/multifunctual.jpg 1x, ./images/multifunctual@2x.jpg 2x" src="./images/multifunctual.jpg"
+        width="360"
+        height="300"
+        alt="multifunctual" />
+        </li>
+        <li>
+        <img srcset="./images/foralldevices.jpg 1x, ./images/foralldevices@2x.jpg 2x" src="./images/foralldevices.jpg"
+        width="360"
+        height="300"
+        alt="multifunctual" />
+        </li>
     </ul>
     </div>
 </section>
@@ -166,7 +189,7 @@
                 src=".images/Mark_Guerrero.jpg"
                 alt="Mark Guerrero" width="264" height="260"/>
                 <div class="card-bottom">
-                    <h3 class="section-name">Mark Guerrero</h3>
+                    <h3 class="section-name-worker">Mark Guerrero</h3>
                     <p class="section-text">Product Designer</p>
                     <ul class="socials-list">
                         <li class="socials-item">
@@ -209,7 +232,7 @@
                 src="./images/Tom_Ford.jpg"
                 alt="Tom Ford" width="264" height="260"/>
                 <div class="card-bottom">
-                    <h3 class="section-name">Tom Ford</h3>
+                    <h3 class="section-name-worker">Tom Ford</h3>
                     <p class="section-text">Frontend Developer</p>
                     <ul class="socials-list">
                         <li class="socials-item">
@@ -252,7 +275,7 @@
                 src="./images/Camila_Garcia.jpg"
                  alt="Camila Garcia" width="264" height="260"/>
                 <div class="card-bottom">
-                    <h3 class="section-name">Camila Garcia</h3>
+                    <h3 class="section-name-worker">Camila Garcia</h3>
                     <p class="section-text">Marketing</p>
                     <ul class="socials-list">
                         <li class="socials-item">
@@ -295,7 +318,7 @@
                 src="./images/Daniel_Wilson.jpg"
                 alt="Daniel Wilson" width="264" height="260"/>
                 <div class="card-bottom">
-                    <h3 class="section-name">Daniel Wilson</h3>
+                    <h3 class="section-name-worker">Daniel Wilson</h3>
                     <p class="section-text">UI Designer</p>
                     <ul class="socials-list">
                         <li class="socials-item">
@@ -402,19 +425,6 @@
             marketing & growth solutions.
         </p>
 </div>
-<div class="footer-form">
-    <h3 class="footer-form-text">Subscribe</h3>
-    <form class="footer-form-subscribe" autocomplete="off" novalidate>
-        <label class="user-insert">
-            <input class="footer-insert-area" type="email" type="text" name="user-email" placeholder="E-mail">
-        </label>
-        <button type="submit" class="button-subscribe">Subscribe
-            <svg class="footer-svg">
-                <use href="./images/icons.svg#icon-sendtelegram"></use>
-            </svg>
-        </button>
-    </form>
-</div>
 <div class="media">
     <h3 class="social-media">Social media</h3>
     <ul class="footer-social-list">
@@ -452,6 +462,20 @@
         </li>
     </ul>
 </div>
+<div class="footer-form">
+    <h3 class="footer-form-text">Subscribe</h3>
+    <form class="footer-form-subscribe" autocomplete="off" novalidate>
+        <label class="user-insert">
+            <input class="footer-insert-area" type="email" type="text" name="user-email" placeholder="E-mail">
+        </label>
+        <button type="submit" class="button-subscribe">Subscribe
+            <svg class="footer-svg">
+                <use href="./images/icons.svg#icon-sendtelegram"></use>
+            </svg>
+        </button>
+    </form>
+</div>
+
 </div>
 </footer>
 <div class="backdrop is-hidden" data-modal>
@@ -504,9 +528,9 @@ Leave your contacts and we will call you back
 <label class="modal-check">
     <input id="user-policy" type="checkbox" name="user-policy" class="form-check">
     <span class="checked"></span>
-     I accept the terms and conditions of the
+     <span>I accept the terms and conditions of the
     <a href="">Privacy Policy</a>
-
+</span>
 </label>
 <button type="submit" class="button-oneform">Send</button>
 </form>
