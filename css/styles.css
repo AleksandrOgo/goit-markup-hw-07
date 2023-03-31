@@ -71,15 +71,14 @@ column-gap: 64px;
     }
 }
 
-
 .header {
     padding: 25px 0px;
     box-sizing: border-box;
     border-bottom: 1px solid #E7E9FC;
 }
-@media screen and (min-width: 467px) {
+@media screen and (min-width: 768px) {
     .header {
-        padding: 24px 0px;
+        padding: 16px 0px;
     }
 }
 @media screen and (min-width: 1200px) {
@@ -87,6 +86,7 @@ column-gap: 64px;
     padding: 24px 0px;
     }
 }
+
 
 .header-container {
     display: flex;
@@ -357,7 +357,7 @@ margin-top: auto;
         background-color: currentColor;
         border-radius: 2px;
         position: absolute;
-        bottom: -18px;
+        bottom: -25px;
         color: var(--color-blue-light);
         padding: 0;
     }
@@ -569,6 +569,7 @@ font-size: 30px;
 
 .hero {
     text-align: center;
+    background-color: var(--color-dark);
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)), url('../images/people-office-mobile.jpg');
     background-repeat: no-repeat;
@@ -579,53 +580,49 @@ font-size: 30px;
 @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .box {
-    background-image: url('../images/people-office-mobile@2x.jpg');
+    .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)), url('../images/people-office-mobile@2x.jpg');
     }
     }
 
-@media screen and (min-width: 468px) {
+@media screen and (min-width: 430px) {
     .hero {
-        background-color: var(--color-dark);
-        text-align: center;
-        padding: 112px 0px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)), url('../images/people-office-tablet.jpg');
-        margin: 0 auto;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
     }
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
-    .box {
-        background-image: url('../images/people-office-tablet@2x.jpg');
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)), url('../images/people-office-tablet@2x.jpg');
     }
 }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
     .hero {
-        background-color: var(--color-dark);
-        text-align: center;
-        padding: 112px 0px;
+        max-width: 1440px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)), url('../images/people-office.jpg');
-        max-width: 1440px;
-        margin: 0 auto;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
     }
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        .box {
-            background-image: url('../images/people-office@2x.jpg');
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)), url('../images/people-office@2x.jpg');
         }
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .hero {
+padding: 188px 0;
+    }
+}
+
 .button-order-service {
     background-color: var(--color-blue);
     color: var(--color-white);
@@ -792,8 +789,6 @@ font-size: 30px;
 
 @media screen and (min-width: 768px) {
 .section-name {
-        column-gap: 72px;
-        row-gap: 24px;
         text-align: left;
     }
 }
@@ -840,20 +835,18 @@ font-size: 30px;
 }
 
 .section-text {
-    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--color-dark);
+    color: var(--color-gray);
     letter-spacing: 0.02em;
     margin-top: 8px;
 }
 @media screen and (min-width: 468px) {
-    .section-name {
-        font-weight: 500;
-        font-size: 20px;
+    .section-text {
+        font-size: 16px;
         line-height: 1.2;
-        color: var(--color-dark);
+        color: var(--color-gray);
         letter-spacing: 0.02em;
         gap: 24px;
     }
