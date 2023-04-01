@@ -1417,6 +1417,9 @@ display: none;
 max-width: 264px;
 text-align: center;
 }
+.footer-form {
+    width: 100%;
+}
 @media screen and (min-width: 768px) {
     .footer-block {
         width: 264px;
@@ -1514,9 +1517,12 @@ text-align: center;
 }
 
 .footer-form-subscribe {
+    width: 100%;
     flex-wrap: wrap;
     display: flex;
     gap: 16px;
+    flex-direction: column;
+    align-items: center;
 }
 @media screen and (min-width: 768px) {
     .footer-form-subscribe {
@@ -1571,6 +1577,7 @@ gap: 24px;
 }
 .user-insert {
     display: block;
+    width: 100%;
 }
 
 .button-subscribe {
@@ -1587,7 +1594,7 @@ gap: 24px;
     border: none;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
     .button-subscribe {
         display: flex;
         align-items: center;
@@ -1602,21 +1609,7 @@ gap: 24px;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
-@media screen and (min-width: 1200px) {
-    .button-subscribe {
-            display: flex;
-            align-items: center;
-            width: 165px;
-            height: 40px;
-            background-color: var(--color-blue);
-            color: #FFFFFF;
-            border-radius: 4px;
-            padding: 8px 24px;
-            gap: 16px;
-            cursor: pointer;
-            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
-}
+
 
 .button-subscribe:hover {
     background-color: var(--color-blue-light);
