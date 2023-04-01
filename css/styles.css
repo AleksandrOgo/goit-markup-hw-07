@@ -1526,7 +1526,7 @@ text-align: center;
 }
 @media screen and (min-width: 768px) {
     .footer-form-subscribe {
-gap: 24px;
+    gap: 24px;
     }
 }
 
@@ -1580,6 +1580,12 @@ gap: 24px;
     width: 100%;
 }
 
+@media screen and (min-width: 768px) {
+.user-insert {
+    display: flex;
+    width: 264px;
+}
+}
 .button-subscribe {
     display: flex;
     align-items: center;
