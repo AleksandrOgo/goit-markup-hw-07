@@ -1420,6 +1420,13 @@ text-align: center;
 .footer-form {
     width: 100%;
 }
+@media screen and (min-width: 767px) {
+    .footer-form {
+        display: block;
+        width: auto;
+        text-align: left;
+    }
+}
 @media screen and (min-width: 768px) {
     .footer-block {
         width: 264px;
@@ -1479,13 +1486,6 @@ text-align: center;
     height: 24px;
 }
 
-.footer-form {
-    display: block;
-}
-
-
-
-
 .footer-form-text {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -1527,6 +1527,7 @@ text-align: center;
 @media screen and (min-width: 768px) {
     .footer-form-subscribe {
     gap: 24px;
+    flex-direction: row;
     }
 }
 
